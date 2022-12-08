@@ -31,12 +31,12 @@ func main() {
 	fromPortStr := arguments[1]
 	tilPortStr := arguments[2]
 
-	fromPort, err := strconv.ParseInt(fromPortStr, 10, 16)
+	fromPort, err := strconv.ParseInt(fromPortStr, 10, 17)
 	if err != nil {
 		log.Panicf("can't parse the from port: %+v", err)
 	}
 
-	tilPort, err := strconv.ParseInt(tilPortStr, 10, 16)
+	tilPort, err := strconv.ParseInt(tilPortStr, 10, 17)
 	if err != nil {
 		log.Panicf("can't parse the til port: %+v", err)
 	}
